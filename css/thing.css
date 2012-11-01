@@ -1,0 +1,42 @@
+body {
+	margin: auto 2em;
+}
+
+.element {
+	float: left;
+}
+
+#explanation {
+	margin-left: 2em;
+}
+
+button {
+	border: none;
+	padding: 0.2em 0.5em;
+	margin: 0.2em;
+}
+button:hover {
+	background-color: orange;
+}
+
+
+#grid td {
+	width: 1.5em;
+	height: 1.5em;
+	border: 1px dashed #888;
+	text-align: center;
+	color: #888
+}
+
+#grid td {
+	-webkit-transition: background 0.01s;
+}
+#grid td.on {
+	background: black;
+	-webkit-transition: background 0.25s;
+	border: none;
+}
+
+#grid td.cursor {
+	background: red;
+}

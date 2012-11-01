@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>cp's spiral of Conway's game of life</title>
+
+		<!-- jquery -->
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+
+		<!-- d3.js -->
+		<script src="js/d3.v2.min.js"></script>
+
+		<!-- normalise.css -->
+		<link rel="stylesheet" href="css/normalize.css"></link>
+
+		<script type="text/javascript" src="js/thing.js"></script>
+		<link rel="stylesheet" href="css/thing.css"></link>
+	</head>
+	<body>
+
+		<h1>cp's spiral of Conway's game of life</h1>
+
+		<div id="board" class="element">
+			<button id="play">Play</button>
+			<button id="tick">One tick</button>
+			<button id="randomise">Randomise</button>
+			Frame (ish): <span id="framecounter"></span>
+			<table id="grid" unselectable></table>
+		</div>
+
+		<div id="explanation" class="element">
+			<p>Rather than all the cells in the grid being updated at once for each frame, a cursor winds outwards from the centre, updating each cell as it goes.</p>
+			<p>But that isn't all! When all of a cell's neighbours are on the same frame, it gets to do an extra update.</p>
+			<p>The end result is the same as the normal game, but the way it gets there is different.</p>
+			<p>Click on cells to change their state, but beware that unless the cursor is at the bottom-right of the grid, adjacent cells might be on different frames.</p>
+			<p>Refresh the page to reset the game, because I have done my d3.js badly.</p>
+		</div>
+
+	</body>
+</html>
+
+
+
